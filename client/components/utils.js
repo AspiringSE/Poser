@@ -83,3 +83,133 @@ export function drawSkeleton(
     )
   })
 }
+
+//if it satisfies the coordinates
+
+export const chidoriPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[9].score > minPoseConfidence &&
+    keypoints[9].position.x >= 400 &&
+    keypoints[9].position.x <= 500 &&
+    keypoints[9].position.y >= 400 &&
+    keypoints[9].position.y <= 500 &&
+    keypoints[10].score > minPoseConfidence &&
+    keypoints[10].position.x >= 400 &&
+    keypoints[10].position.x <= 500 &&
+    keypoints[10].position.y >= 400 &&
+    keypoints[10].position.y <= 500
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const rasenganPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[9].score > minPoseConfidence &&
+    keypoints[9].position.x >= 450 &&
+    keypoints[9].position.x <= 550 &&
+    keypoints[9].position.y >= 300 &&
+    keypoints[9].position.y <= 400 &&
+    keypoints[10].score > minPoseConfidence &&
+    keypoints[10].position.x >= 400 &&
+    keypoints[10].position.x <= 500 &&
+    keypoints[10].position.y >= 400 &&
+    keypoints[10].position.y <= 500
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const kamehamehaPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[9].score > minPoseConfidence &&
+    keypoints[9].position.x >= 350 &&
+    keypoints[9].position.x <= 450 &&
+    keypoints[9].position.y >= 150 &&
+    keypoints[9].position.y <= 250 &&
+    keypoints[10].score > minPoseConfidence &&
+    keypoints[10].position.x >= 350 &&
+    keypoints[10].position.x <= 450 &&
+    keypoints[10].position.y >= 150 &&
+    keypoints[10].position.y <= 250
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const thorPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[9].score > minPoseConfidence &&
+    keypoints[9].position.x >= 700 &&
+    keypoints[9].position.x <= 800 &&
+    keypoints[9].position.y >= 100 &&
+    keypoints[9].position.y <= 200
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const flashPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[9].score > minPoseConfidence &&
+    keypoints[9].position.x >= 550 &&
+    keypoints[9].position.x <= 650 &&
+    keypoints[9].position.y >= 300 &&
+    keypoints[9].position.y <= 400 &&
+    keypoints[10].score > minPoseConfidence &&
+    keypoints[10].position.x >= 200 &&
+    keypoints[10].position.x <= 300 &&
+    keypoints[10].position.y >= 300 &&
+    keypoints[10].position.y <= 400
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const spiritbombPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[9].score > minPoseConfidence &&
+    keypoints[9].position.x >= 500 &&
+    keypoints[9].position.x <= 600 &&
+    keypoints[9].position.y >= 50 &&
+    keypoints[9].position.y <= 150 &&
+    keypoints[10].score > minPoseConfidence &&
+    keypoints[10].position.x >= 300 &&
+    keypoints[10].position.x <= 400 &&
+    keypoints[10].position.y >= 50 &&
+    keypoints[10].position.y <= 150
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const poopPosition = (minPoseConfidence, keypoints) => {
+  if (
+    keypoints[12].score > minPoseConfidence &&
+    keypoints[12].position.x >= 300 &&
+    keypoints[12].position.x <= 400 &&
+    keypoints[12].position.y >= 400 &&
+    keypoints[12].position.y <= 500 &&
+    keypoints[13].score > minPoseConfidence &&
+    keypoints[13].position.x >= 400 &&
+    keypoints[13].position.x <= 500 &&
+    keypoints[13].position.y >= 400 &&
+    keypoints[13].position.y <= 500
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
